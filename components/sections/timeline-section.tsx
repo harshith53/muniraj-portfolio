@@ -6,24 +6,39 @@ import Image from "next/image";
 
 const ITEMS = [
   {
-    year: "2014",
-    title: "Foundation of Change",
-    body: "Initiated the First Community Literacy Program, reaching over 5,000 students across 12 districts.",
+    year: "1996",
+    title: "Booth President",
+    body: "Kacharakanahalli Ward",
   },
   {
-    year: "2018",
-    title: "Healthcare Revolution",
-    body: "Established 12 free health clinics providing essential healthcare services to marginalised communities.",
+    year: "1999",
+    title: "Ward President",
+    body: "Yuva Morcha, Kacharakanahalli Ward",
   },
   {
-    year: "2021",
-    title: "Infrastructure Leap",
-    body: "Successfully advocated for and oversaw the completion of the Greenfield Highway connecting 10 villages.",
+    year: "2002",
+    title: "General Secretary",
+    body: "Yuva Morcha, Devarajeevanahalli Mandal",
   },
   {
-    year: "2024",
-    title: "The Future is Now",
-    body: "Launching the Digital Empowerment Hub, targeting 1,000 youths for global tech employment.",
+    year: "2005",
+    title: "President",
+    body: "Yuva Morcha, Devarajeevanahalli Mandal",
+  },
+  {
+    year: "2008 - 2020",
+    title: "General Secretary",
+    body: "Served 12 years as General Secretary, Sarvagna Nagar Assembly Constituency. Also nominated as Vistharak across many parts of Karnataka.",
+  },
+  {
+    year: "2020 - 2025",
+    title: "Constituency President",
+    body: "Served as President, Sarvagna Nagar Assembly Constituency.",
+  },
+  {
+    year: "2025 - Present",
+    title: "Vice President",
+    body: "BJP Bengaluru Central District",
   },
 ] as const;
 
@@ -37,16 +52,29 @@ export function TimelineSection() {
       className="relative scroll-mt-20 overflow-hidden bg-[#F7941D] py-16 lg:py-24"
       ref={ref}
     >
-      {/* Dimmed Watermark */}
+      {/* Dimmed Watermarks */}
+      {/* Dimmed Watermarks */}
       <div 
-        className="pointer-events-none absolute left-0 top-0 h-full w-full select-none opacity-[0.22]" 
+        className="pointer-events-none absolute inset-0 select-none opacity-[0.22]" 
         aria-hidden="true"
       >
         <Image
           src="/bg-photo.png"
           alt=""
           fill
-          className="object-contain object-left-top scale-[1.1] grayscale"
+          className="object-contain object-left-top grayscale scale-[1.1] -translate-x-[5%] -translate-y-[5%]"
+        />
+      </div>
+      {/* Bottom Right Watermark */}
+      <div 
+        className="pointer-events-none absolute right-0 bottom-0 h-1/2 w-[80%] md:w-1/2 select-none opacity-[0.08] md:opacity-[0.15]" 
+        aria-hidden="true"
+      >
+        <Image
+          src="/Muniraj /muniraj-bg-3.png"
+          alt=""
+          fill
+          className="object-contain object-right-bottom grayscale"
         />
       </div>
 

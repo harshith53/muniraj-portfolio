@@ -8,14 +8,14 @@ const LINKS = {
     { label: "Manifesto", href: "#" },
   ],
   office: [
-    { label: "Shakti Nagar Main Road", href: "#" },
-    { label: "Bengaluru, 560016", href: "#" },
-    { label: "Mon - Sat: 10AM - 6PM", href: "#" },
+    { label: "#50/1, BJP Office , 1st floor", href: "#" },
+    { label: "Above Ashirvad Super Market", href: "#" },
+    { label: "Dodda Banaswadi , Bengaluru -560053", href: "#" },
   ],
   connect: [
     { label: "Contact", href: "#contact" },
-    { label: "Email", href: "mailto:aaavenger@munirajkarnik.com" },
-    { label: "Call", href: "tel:+919767648210" },
+    { label: "munirajkarnikbjp@gmail.com", href: "mailto:munirajkarnikbjp@gmail.com" },
+    { label: "Call: 944851264 / 789268717", href: "tel:+91944851264" },
   ],
 } as const;
 
@@ -25,8 +25,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <p className="text-lg font-bold text-[#F7941D]">Muniraj Karnik</p>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/75">
+            <p className="text-xl font-extrabold text-[#F7941D]">K. Muniraj Karnik</p>
+            <p className="mt-1 text-sm font-bold text-white/90 uppercase tracking-widest">
+              District Vice President
+            </p>
+            <p className="text-xs font-semibold text-[#F7941D] uppercase tracking-wider mb-4">
+              BJP Bengaluru Central
+            </p>
+            <p className="max-w-sm text-sm leading-relaxed text-white/75">
               Dedicated to building a transparent, progressive, and inclusive
               future for all citizens of our constituency.
             </p>
