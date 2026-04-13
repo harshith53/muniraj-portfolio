@@ -19,6 +19,23 @@ A modern, highly responsive political portfolio and civic engagement portal buil
 - **Dynamic Services Gallery:** A responsive Bento-grid layout highlighting recent civic resolutions (e.g. Tree Clearance, Rapid Response) utilizing native arrays for multi-image displays per service.
 - **"Your Voice Matters" Portal:** A direct community feedback form utilizing native HTML5 APIs to instantly collect precise Geo-Location tags and direct Camera/Photo attachments directly from citizens.
 
+---
+
+## 📸 Screenshots
+
+> **Note:** To add actual interface screenshots, drop your images into the `public/` directory and replace the placeholder paths below!
+
+<p align="center">
+  <img src="public/images/moments/moment-71.jpg" width="49%" alt="Hero Section Desktop View" />
+  <img src="public/images/moments/moment-3.jpg" width="49%" alt="Explore Initiatives Timeline" />
+</p>
+<p align="center">
+  <img src="public/images/moments/moment-9.jpg" width="49%" alt="Mobile Responsive Navigation" />
+  <img src="public/images/moments/moment-14.jpg" width="49%" alt="Bento Grid Services Gallery" />
+</p>
+
+---
+
 ## 🛠 Getting Started
 
 First, install the dependencies using pnpm:
