@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muniraj Karnik | Official Campaign Portal
 
-## Getting Started
+A modern, highly responsive political portfolio and civic engagement portal built for Muniraj Karnik's 2026 campaign. This Next.js application focuses on community outreach, transparent communication of legacy milestones, and direct citizen feedback.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Package Manager**: pnpm
+
+## ✨ Key Features
+
+- **Responsive Hero Section:** Immersive entry point with subtle video backgrounds and dynamic scrolling interactions.
+- **"Journey of Dedication" Timeline:** An alternating historical timeline detailing three decades of public service, augmented with smooth watermark interactions.
+- **Explore Initiatives (Sub-Filter Hub):** A swipeable, horizontal mobile-friendly tab system to explore Community Work, Announcements, and Upcoming Plans.
+- **Dynamic Services Gallery:** A responsive Bento-grid layout highlighting recent civic resolutions (e.g. Tree Clearance, Rapid Response) utilizing native arrays for multi-image displays per service.
+- **"Your Voice Matters" Portal:** A direct community feedback form utilizing native HTML5 APIs to instantly collect precise Geo-Location tags and direct Camera/Photo attachments directly from citizens.
+
+## 🛠 Getting Started
+
+First, install the dependencies using pnpm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) with your browser to explore the portal.
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+The UI components are cleanly modularized within `components/sections/`:
+- `hero-section.tsx` - Initial immersive video & entry portal
+- `legacy-section.tsx` - "A Journey of Dedication" alternating timeline
+- `explore-section.tsx` - Sub-filtered dynamic news and announcement tabs
+- `services-section.tsx` - Bento-grid featuring real civic services rendered
+- `moments-section.tsx` - Custom prioritized horizontal image carousel
+- `join-section.tsx` - "Your Voice Matters" contact, location & attachment integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗 Future Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The current citizen feedback forms (`join-section.tsx`) are configured to handle mock submissions. A comprehensive `backend_suggestions_architecture.md` has been drafted to outline the future implementation of PostgreSQL (via Prisma), robust S3 Image uploads, and a secure admin dashboard.
