@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
+import Image from "@/components/ui/image";
 
 const ITEMS = [
   {

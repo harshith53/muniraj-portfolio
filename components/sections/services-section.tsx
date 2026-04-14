@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/ui/image";
 import { useState, useEffect } from "react";
 
 const SERVICES = [

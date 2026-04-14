@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/image";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { Lightbulb, Camera, Paperclip, MapPin, Search, CheckCircle2, Copy, Send, Activity, Clock, ShieldCheck, Check, Mail, Phone, Quote } from "lucide-react";
 import { useRef, useState } from "react";

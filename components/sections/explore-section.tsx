@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo, useEffect } from "react";
 import { Calendar, MapPin, Bell, CheckCircle2, ArrowRight, Activity, Recycle, Map, ShieldCheck, Trees, HeartHandshake, GraduationCap, ChevronDown, ChevronUp } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/ui/image";
 
 // --- DATA ---
 const COMMUNITY_WORK = [
